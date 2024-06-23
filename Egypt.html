@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_88ee2f5a71825be8bee73c7192986e3b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_88ee2f5a71825be8bee73c7192986e3b" ></div>
+        
+</body>
+<script>
+    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_88ee2f5a71825be8bee73c7192986e3b = L.map(
+                                  'map_88ee2f5a71825be8bee73c7192986e3b',
+                                  {center: [30.033333,31.233334],
+                                  zoom: 7,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_8096044d19f92c8e7898f754219c3fce = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_88ee2f5a71825be8bee73c7192986e3b);
+        
+    
+
+            var marker_7e323c77cb8c199eff71938f0ddb7a63 = L.marker(
+                [30.033333,31.233334],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_88ee2f5a71825be8bee73c7192986e3b);
+            
+    
+            var popup_3abb2fcd5ce86ac47b39c0bc400768e9 = L.popup({maxWidth: '300'});
+
+            
+                var html_9333729b0c963bbe12fdb850d6ebdb0d = $('<div id="html_9333729b0c963bbe12fdb850d6ebdb0d" style="width: 100.0%; height: 100.0%;">Egypt</div>')[0];
+                popup_3abb2fcd5ce86ac47b39c0bc400768e9.setContent(html_9333729b0c963bbe12fdb850d6ebdb0d);
+            
+
+            marker_7e323c77cb8c199eff71938f0ddb7a63.bindPopup(popup_3abb2fcd5ce86ac47b39c0bc400768e9);
+
+            
+        
+    
+            var circle_marker_918ba685acf4915a75ea61a7e5a9254f = L.circleMarker(
+                [,],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3186cc",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 50,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_88ee2f5a71825be8bee73c7192986e3b);
+            
+    
+            var popup_e62ca313d017aa5a101a61bd51eb3938 = L.popup({maxWidth: '300'});
+
+            
+                var html_c0abd1ef6eaa8d7686c43c4d45e4d45e = $('<div id="html_c0abd1ef6eaa8d7686c43c4d45e4d45e" style="width: 100.0%; height: 100.0%;">Laurelhurst Park</div>')[0];
+                popup_e62ca313d017aa5a101a61bd51eb3938.setContent(html_c0abd1ef6eaa8d7686c43c4d45e4d45e);
+            
+
+            circle_marker_918ba685acf4915a75ea61a7e5a9254f.bindPopup(popup_e62ca313d017aa5a101a61bd51eb3938);
+
+            
+        
+    
+            var tile_layer_7dc9994ca98226133d86cb7c9f8654c6 = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_88ee2f5a71825be8bee73c7192986e3b);
+        
+    
+            var layer_control_0e56a9b250e05c22e9a5bfc7883b5763 = {
+                base_layers : { "openstreetmap" : tile_layer_06a14457964ad4caa299a75a59c25db5,"stamenwatercolor" : tile_layer_342dd82c6207e49c191684c742b9a6ae,"stamenterrain" : tile_layer_2704ab3484b493891f21ea1f45b2016e,"stamentoner" : tile_layer_d0fe531ce403d1778ab3e95c81532339,"cartodbpositron" : tile_layer_203782d7937bbad34c01f47a188f297c, },
+                overlays : {  }
+                };
+            L.control.layers(
+                layer_control_0e56a9b250e05c22e9a5bfc7883b5763.base_layers,
+                layer_control_0e56a9b250e05c22e9a5bfc7883b5763.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_88ee2f5a71825be8bee73c7192986e3b);
+        
+    
+            var tile_layer_e82e95e8c9c9e512cea27e05dec34a8e = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_88ee2f5a71825be8bee73c7192986e3b);
+        
+    
+            var tile_layer_2704ab3484b493891f21ea1f45b2016e = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_88ee2f5a71825be8bee73c7192986e3b);
+        
+    
+            var tile_layer_d0fe531ce403d1778ab3e95c81532339 = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_88ee2f5a71825be8bee73c7192986e3b);
+        
+    
+            var tile_layer_342dd82c6207e49c191684c742b9a6ae = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_88ee2f5a71825be8bee73c7192986e3b);
+        
+    
+            var tile_layer_2b192bf5f610a2dca72f95c0705fd1a0 = L.tileLayer(
+                'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_88ee2f5a71825be8bee73c7192986e3b);
+        
+    
+            var layer_control_2225c83ac35f8ebdb51ae06e4f1087ba = {
+                base_layers : { "openstreetmap" : tile_layer_06a14457964ad4caa299a75a59c25db5,"stamenwatercolor" : tile_layer_342dd82c6207e49c191684c742b9a6ae,"stamenterrain" : tile_layer_2704ab3484b493891f21ea1f45b2016e,"stamentoner" : tile_layer_d0fe531ce403d1778ab3e95c81532339,"cartodbpositron" : tile_layer_203782d7937bbad34c01f47a188f297c, },
+                overlays : {  }
+                };
+            L.control.layers(
+                layer_control_2225c83ac35f8ebdb51ae06e4f1087ba.base_layers,
+                layer_control_2225c83ac35f8ebdb51ae06e4f1087ba.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_88ee2f5a71825be8bee73c7192986e3b);
+        
+    
+            var tile_layer_06a14457964ad4caa299a75a59c25db5 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_88ee2f5a71825be8bee73c7192986e3b);
+        
+    
+            var tile_layer_203782d7937bbad34c01f47a188f297c = L.tileLayer(
+                'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_88ee2f5a71825be8bee73c7192986e3b);
+        
+    
+            var layer_control_bba2296a163e70dcffcb1d21e918d1cc = {
+                base_layers : { "openstreetmap" : tile_layer_06a14457964ad4caa299a75a59c25db5,"stamenwatercolor" : tile_layer_342dd82c6207e49c191684c742b9a6ae,"stamenterrain" : tile_layer_2704ab3484b493891f21ea1f45b2016e,"stamentoner" : tile_layer_d0fe531ce403d1778ab3e95c81532339,"cartodbpositron" : tile_layer_203782d7937bbad34c01f47a188f297c, },
+                overlays : {  }
+                };
+            L.control.layers(
+                layer_control_bba2296a163e70dcffcb1d21e918d1cc.base_layers,
+                layer_control_bba2296a163e70dcffcb1d21e918d1cc.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_88ee2f5a71825be8bee73c7192986e3b);
+        
+</script>
+</html>
